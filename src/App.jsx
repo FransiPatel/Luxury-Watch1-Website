@@ -31,7 +31,7 @@ const AnimatedRoutes = () => {
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="bg-gray-50 dark:bg-black min-h-screen text-slate-900 dark:text-white scroll-smooth selection:bg-yellow-600 dark:selection:bg-yellow-400 selection:text-white dark:selection:text-black font-sans transition-colors duration-300">
         <ScrollToTop />
         <Navbar />

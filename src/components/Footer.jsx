@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Instagram, Facebook, Twitter } from 'lucide-react';
 
 const Footer = () => {
@@ -21,18 +22,18 @@ const Footer = () => {
                     <div className="col-span-1">
                         <h5 className="uppercase tracking-widest text-xs font-bold text-slate-400 dark:text-gray-500 mb-6">Explore</h5>
                         <ul className="space-y-4 text-sm text-slate-600 dark:text-gray-300 font-light">
-                            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Collection</a></li>
-                            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Craftsmanship</a></li>
-                            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Our Story</a></li>
+                            <li><Link to="/collection" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Collection</Link></li>
+                            <li><Link to="/craftsmanship" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Craftsmanship</Link></li>
+                            <li><Link to="/our-story" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Our Story</Link></li>
                         </ul>
                     </div>
 
                     <div className="col-span-1">
                         <h5 className="uppercase tracking-widest text-xs font-bold text-slate-400 dark:text-gray-500 mb-6">Support</h5>
                         <ul className="space-y-4 text-sm text-slate-600 dark:text-gray-300 font-light">
-                            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Contact Us</a></li>
-                            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Shipping & Returns</a></li>
-                            <li><a href="#" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Warranty</a></li>
+                            <li><Link to="/contact" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Contact Us</Link></li>
+                            <li><Link to="/shipping-returns" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Shipping & Returns</Link></li>
+                            <li><Link to="/warranty" className="hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors">Warranty</Link></li>
                         </ul>
                     </div>
 

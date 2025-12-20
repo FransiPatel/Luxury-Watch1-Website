@@ -9,6 +9,9 @@ import Collection from './pages/Collection';
 import ProductDetail from './pages/ProductDetail';
 import Contact from './pages/Contact';
 import Craftsmanship from './pages/Craftsmanship';
+import OurStory from './pages/OurStory';
+import Warranty from './pages/Warranty';
+import ShippingReturns from './pages/ShippingReturns';
 import GrainOverlay from './components/GrainOverlay';
 import CustomCursor from './components/CustomCursor';
 
@@ -24,6 +27,9 @@ const AnimatedRoutes = () => {
         <Route path="/craftsmanship" element={<Craftsmanship />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/our-story" element={<OurStory />} />
+        <Route path="/warranty" element={<Warranty />} />
+        <Route path="/shipping-returns" element={<ShippingReturns />} />
       </Routes>
     </AnimatePresence>
   );

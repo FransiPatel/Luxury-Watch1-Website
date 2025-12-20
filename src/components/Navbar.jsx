@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, ShoppingBag, Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import useTheme from '../hooks/useTheme';
@@ -79,8 +79,7 @@ const Navbar = () => {
                             {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
                         </motion.div>
                     </button>
-                    <Search className="w-5 h-5 cursor-pointer hover:text-yellow-400 transition-colors" />
-                    <ShoppingBag className="w-5 h-5 cursor-pointer hover:text-yellow-400 transition-colors" />
+
                 </div>
 
                 {/* Mobile Toggle */}
@@ -131,8 +130,7 @@ const Navbar = () => {
                             >
                                 {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
                             </button>
-                            <Search className="w-5 h-5 hover:text-yellow-400 transition-colors cursor-pointer" />
-                            <ShoppingBag className="w-5 h-5 hover:text-yellow-400 transition-colors cursor-pointer" />
+
                         </div>
                     </motion.div>
                 )}
